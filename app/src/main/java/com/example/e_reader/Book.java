@@ -1,0 +1,57 @@
+package com.example.e_reader;
+
+public class Book {
+    private int id;
+    private String title;
+    private String author;
+    private boolean isComplete;
+
+
+    public Book(int id, String title, String author, boolean isComplete) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.isComplete = isComplete;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public boolean getComplete() {
+        return isComplete;
+    }
+
+    public void setComplete(boolean complete) {
+        isComplete = complete;
+    }
+
+    @Override
+    public String toString() {
+        return "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", isComplete=" + isComplete +
+                '}';
+    }
+}
